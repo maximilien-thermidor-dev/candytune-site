@@ -21,18 +21,19 @@
   </style>
 </head>
 
-
 <body>
   <!-- ==================== 1. 共通ヘッダー ==================== -->
-  <header class="hero-section text-center mb-5">
+<header class="hero-section text-center mb-5">
     <div class="container">
       <h1 class="display-4 fw-bold">CANDY TUNE</h1>
-      <p class="lead">Kawaii Lab.発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
-      <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      <p class="lead">カワラボ発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <!-- ボタンの親要素に flex と gap を追加 -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
+        <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      </div>
     </div>
   </header>
-
 
   <!-- ==================== 2. 共通：横並びメニュー ==================== -->
   <nav class="bg-light border-bottom sticky-top shadow-sm py-2">
@@ -64,11 +65,11 @@
     </div>
   </nav>
 
-  <!-- ==================== 3. ページごとのコンテンツエリア ==================== -->
-<main class="container py-4">
+  <!-- ==================== 3. コンテンツエリア ==================== -->
+  <main class="container py-4">
     <!-- サイト最終更新日バッジ -->
     <div class="d-flex justify-content-end mb-3">
-      <span class="badge bg-secondary p-2 shadow-sm">最終更新日: 2026.08.14</span>
+      <span class="badge bg-secondary p-2 shadow-sm">最終更新日: 2026.08.16</span>
     </div>
 
     <!-- 最新リリース ピックアップ -->
@@ -117,25 +118,20 @@
         </div>
       </div>
 
-
-  <div class="card border-0 shadow-sm rounded-4 p-3 mb-4">
-  <h4 class="fw-bold mb-3">📢 公式X（旧Twitter）</h4>
-  
-  <!-- ここからX埋め込み -->
-  <a class="twitter-timeline" data-height="500" href="https://twitter.com/CANDY_TUNE_?ref_src=twsrc%5Etfw">
-    Tweets by CANDY_TUNE_
-  </a> 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <!-- ここまで -->
-  
-</div>
-
-
-
     </section>
+
+    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-center bg-light">
+      <h4 class="fw-bold mb-2"><i class="bi bi-twitter-x me-2"></i>公式X (Twitter) で最新情報をチェック！</h4>
+      <p class="text-muted small mb-3">ライブ・イベント出演情報やメンバーの最新オフショットを毎日更新中！</p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="https://twitter.com/CANDY_TUNE_" target="_blank" class="btn btn-dark rounded-pill px-4 fw-bold">
+          <i class="bi bi-twitter-x me-1"></i> @CANDY_TUNE_ をフォロー
+        </a>
+      </div>
+    </div>
+
   </main>
 
-  
   <!-- ==================== 4. 共通フッター ==================== -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>

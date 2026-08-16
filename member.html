@@ -21,18 +21,19 @@
   </style>
 </head>
 
-
 <body>
   <!-- ==================== 1. 共通ヘッダー ==================== -->
-  <header class="hero-section text-center mb-5">
+<header class="hero-section text-center mb-5">
     <div class="container">
       <h1 class="display-4 fw-bold">CANDY TUNE</h1>
-      <p class="lead">Kawaii Lab.発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      <p class="lead">カワラボ発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <!-- ボタンの親要素に flex と gap を追加 -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
+        <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      </div>
     </div>
   </header>
-
 
   <!-- ==================== 2. 共通：横並びメニュー ==================== -->
   <nav class="bg-light border-bottom sticky-top shadow-sm py-2">
@@ -64,9 +65,6 @@
     </div>
   </nav>
 
-
-
-
   <!-- ==================== 3. ページごとのコンテンツエリア ==================== -->
   <main class="container py-4">
     <section class="mb-5">
@@ -74,7 +72,7 @@
       <div class="row g-4">
         
         <!-- 1. りのまる -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="りのまる"> -->
             <div class="card-body">
@@ -93,53 +91,68 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoRino" aria-expanded="false">
-                🎬 りのまるの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoRino" aria-expanded="false">
+                  🎬 りのまるの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoRino">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe
-                  width="1059"
-                  height="595"
-                  src="https://www.youtube.com/embed/Nf_WTDhxzCk"
-                  title="【福山梨乃】CANDY TUNE DOCUMENTARY #5"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>  
-              <div class="text-center">
-                <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoRino">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/Nf_WTDhxzCk"
+                    title="【福山梨乃】CANDY TUNE DOCUMENTARY #5"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>  
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
+
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/l9oXGomtlM8"
+                    title="【ダイジェスト】福山梨乃 生誕祭2025 at Spotify O-EAST"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">生誕祭2025</h6>
+                </div>
+
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="992"
+                    height="483"
+                    src="https://www.youtube.com/embed/rFPbLLs8JKo"
+                    title="【ドキュメンタリー】福山梨乃生誕祭2024"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">生誕祭2024</h6>
+                </div>
+
               </div>
-
-
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe
-                  width="1059"
-                  height="595"
-                  src="https://www.youtube.com/embed/l9oXGomtlM8"
-                  title="【ダイジェスト】福山梨乃 生誕祭2025 at Spotify O-EAST"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="text-center">
-                <h6 class="fw-bold mb-1">生誕祭2025</h6>
-              </div>
-
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 2. きりちゃん -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="きりちゃん"> -->
             <div class="card-body">
@@ -158,32 +171,32 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoKiri" aria-expanded="false">
-                🎬 きりちゃんの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoKiri" aria-expanded="false">
+                  🎬 きりちゃんの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoKiri">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe
-                  width="1059"
-                  height="595"
-                  src="https://www.youtube.com/embed/REpu6KGdU0w"
-                  title="【桐原美月】CANDY TUNE DOCUMENTARY #1"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoKiri">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/REpu6KGdU0w"
+                    title="【桐原美月】CANDY TUNE DOCUMENTARY #1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 3. なったん -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="なったん"> -->
             <div class="card-body">
@@ -202,23 +215,35 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoNatsu" aria-expanded="false">
-                🎬 なったんの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoNatsu" aria-expanded="false">
+                  🎬 なったんの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoNatsu">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="なったん注目動画" allowfullscreen></iframe>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoNatsu">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/QS9l0yiT8fc"
+                    title="【南なつ】CANDY TUNE DOCUMENTARY #4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>  
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 4. なちこ -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="なちこ"> -->
             <div class="card-body">
@@ -237,23 +262,35 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoNachi" aria-expanded="false">
-                🎬 なちこの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoNachi" aria-expanded="false">
+                  🎬 なちこの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoNachi">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="なちこ注目動画" allowfullscreen></iframe>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoNachi">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/4zpYdeGoVJY"
+                    title="【小川奈々子】CANDY TUNE DOCUMENTARY #3"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>  
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 5. こっちゃん -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="こっちゃん"> -->
             <div class="card-body">
@@ -272,23 +309,51 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoKotomi" aria-expanded="false">
-                🎬 こっちゃんの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoKotomi" aria-expanded="false">
+                  🎬 こっちゃんの動画
+              </button>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoKotomi">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/osAL1Q8F0Ns"
+                    title="【立花琴未】CANDY TUNE DOCUMENTARY #2"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoKotomi">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="こっちゃん注目動画" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="992"
+                    height="483"
+                    src="https://www.youtube.com/embed/6td-A_sgzcg"
+                    title="CANDY TUNE 立花琴未に100問100答♡素顔も本音も全部見せます！"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">立花琴未に100問100答</h6>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 6. しーちゃん -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="しーちゃん"> -->
             <div class="card-body">
@@ -307,23 +372,35 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoShizuka" aria-expanded="false">
-                🎬 しーちゃんの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoShizuka" aria-expanded="false">
+                  🎬 しーちゃんの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoShizuka">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="しーちゃん注目動画" allowfullscreen></iframe>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoShizuka">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/E-3-DDuuE2U"
+                    title="【宮野静】CANDY TUNE DOCUMENTARY #6"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>  
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- 7. びびちゃん -->
-        <div class="col-6 col-sm-6 col-lg-3 mb-2 mb-2">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-2">
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="びびちゃん"> -->
             <div class="card-body">
@@ -342,36 +419,52 @@
                 </a>
               </div>
 
-            <!-- 注目動画の展開ボタン -->
-            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoBibi" aria-expanded="false">
-                🎬 びびちゃんの注目動画
-            </button>
+              <!-- 注目動画の展開ボタン -->
+              <button class="btn btn-outline-danger btn-sm rounded-pill w-100 my-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#videoBibi" aria-expanded="false">
+                  🎬 びびちゃんの動画
+              </button>
 
-            <!-- 折りたたみ動画エリア -->
-            <div class="collapse mt-2" id="videoBibi">
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe
-                  width="1059"
-                  height="595"
-                  src="https://www.youtube.com/embed/HQrnFVKwh-o"
-                  title="【ダイジェスト】村川緋杏生誕祭2025 at Spotify O-EAST"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>  
-              <div class="text-center">
-                <h6 class="fw-bold mb-1">生誕祭2025</h6>
+              <!-- 折りたたみ動画エリア -->
+              <div class="collapse mt-2" id="videoBibi">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/OmmLruOqPm4"
+                    title="【村川緋杏】CANDY TUNE DOCUMENTARY #7"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
+                </div>
+
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                  <iframe
+                    width="1059"
+                    height="595"
+                    src="https://www.youtube.com/embed/HQrnFVKwh-o"
+                    title="【ダイジェスト】村川緋杏生誕祭2025 at Spotify O-EAST"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>  
+                <div class="text-center">
+                  <h6 class="fw-bold mb-1">生誕祭2025</h6>
+                </div>
+
               </div>
-
-              
             </div>
           </div>
         </div>
       </div>
+    </section>
   </main>
-
 
   <!-- ==================== 4. 共通フッター ==================== -->
   <footer class="bg-dark text-white text-center py-3 mt-5">

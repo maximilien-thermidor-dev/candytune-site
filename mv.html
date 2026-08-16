@@ -35,15 +35,17 @@
   </style>
 </head>
 
-
 <body>
   <!-- ==================== 1. 共通ヘッダー ==================== -->
-  <header class="hero-section text-center mb-5">
+<header class="hero-section text-center mb-5">
     <div class="container">
       <h1 class="display-4 fw-bold">CANDY TUNE</h1>
-      <p class="lead">Kawaii Lab.発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      <p class="lead">カワラボ発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <!-- ボタンの親要素に flex と gap を追加 -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
+        <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      </div>
     </div>
   </header>
 
@@ -77,13 +79,11 @@
     </div>
   </nav>
 
-
   <!-- ==================== 2. ヒーローセクション ==================== -->
   <div class="hero-section text-center mb-5">
     <h2 class="h3 fw-bold mb-2">Music Videos & Behind The Scenes</h2>
     <p class="m-0 text-secondary small">CANDY TUNEの公式MVと舞台裏メイキング映像のまとめページです！</p>
   </div>
-
 
   <!-- ==================== 3. コンテンツ ==================== -->
 <main class="container mb-5">
@@ -415,10 +415,8 @@
           <p class="text-secondary small m-0">2023.03.15 Release</p>
         </div>
       </div>
-
     </div>
   </section>
-
 
 <!-- ------------------ 3-2. MV舞台裏・メイキングセクション ------------------ -->
     <section class="pt-4 border-top">
@@ -432,6 +430,24 @@
       <!-- 舞台裏動画一覧 -->
       <div class="row g-4">
 
+        <!-- アイしちゃってます♡ -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="992"
+              height="483"
+              src="https://www.youtube.com/embed/1w0_TX0h-RE"
+              title="【MV MAKING MOVIE】「アイしちゃってます♡」"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">アイしちゃってます♡</h6>
+          </div>
+        </div>
 
         <!-- 倍倍FIGHT! -->
         <div class="col-12 col-sm-6 col-lg-3">
@@ -471,6 +487,25 @@
           </div>
         </div>
 
+        <!-- 推し♡好き♡しんどい-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="992"
+              height="483"
+              src="https://www.youtube.com/embed/q_KMecRiDi4"
+              title="【裏側密着】CANDY TUNE「推し♡好き♡しんどい」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">推し♡好き♡しんどい</h6>
+          </div>
+        </div>
+
         <!-- 必殺あざとポーズ -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
@@ -487,6 +522,25 @@
           </div>
           <div class="text-center">
             <h6 class="fw-bold mb-1">必殺あざとポーズ</h6>
+          </div>
+        </div>
+
+        <!-- 備えあれば無問題 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="992"
+              height="483"
+              src="https://www.youtube.com/embed/RdTrmuLx8m0"
+              title="【裏側密着】CANDY TUNE「備えあれば無問題」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              ="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">備えあれば無問題</h6>
           </div>
         </div>
 
@@ -508,9 +562,6 @@
             <h6 class="fw-bold mb-1">hanamaru</h6>
           </div>
         </div>
-
-
-
 
       </div>
     </section>

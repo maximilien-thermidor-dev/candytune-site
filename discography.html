@@ -15,15 +15,20 @@
 </head>
 
 <body>
-  <!-- 共通ヘッダー -->
-  <header class="hero-section text-center mb-4">
+  <!-- ==================== 1. 共通ヘッダー ==================== -->
+<header class="hero-section text-center mb-5">
     <div class="container">
       <h1 class="display-4 fw-bold">CANDY TUNE</h1>
-      <p class="lead">Kawaii Lab.発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <p class="lead">カワラボ発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <!-- ボタンの親要素に flex と gap を追加 -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
+        <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      </div>
     </div>
   </header>
 
-  <!-- 共通ナビゲーション -->
+  <!-- ==================== 2. 共通：横並びメニュー ==================== -->
   <nav class="bg-light border-bottom sticky-top shadow-sm py-2">
     <div class="container">
       <div class="d-md-none text-center">
@@ -51,10 +56,10 @@
     </div>
   </nav>
 
-  <!-- メインコンテンツ -->
+  <!-- ==================== 3. コンテンツエリア ==================== -->
   <main class="container py-4">
     <h2 class="text-center fw-bold mb-4">Discography & Songs</h2>
-    <p class="text-center text-muted mb-4">CANDY TUNEのオリジナル楽曲・リリース一覧です。</p>
+    <p class="text-center text-muted mb-4">CANDY TUNEの楽曲・リリース一覧です。</p>
 
     <div class="card border-0 shadow-sm rounded-4 p-3 p-md-4">
       <div class="table-responsive">
@@ -63,7 +68,6 @@
             <tr>
               <th scope="col" style="min-width: 160px;">楽曲名</th>
               <th scope="col" style="min-width: 110px;">リリース / 初披露</th>
-              <th scope="col" style="min-width: 100px;">種別</th>
               <th scope="col" style="min-width: 200px;">備考 / 作曲など</th>
               <th scope="col" class="text-center" style="min-width: 100px;">リンク</th>
             </tr>
@@ -72,56 +76,184 @@
             <tr>
               <td class="fw-bold">キス・ミー・パティシエ</td>
               <td>2023.03.14</td>
-              <td><span class="badge bg-primary">代表曲 / EP</span></td>
               <td class="small text-muted">作詞: すぅ(SILENT SIREN) / 作曲: クボナオキ<br>TikTokでも大バズりした王道ナンバー！</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
             <tr>
               <td class="fw-bold">hanamaru</td>
               <td>2023.03.14</td>
-              <td><span class="badge bg-secondary">配信</span></td>
               <td class="small text-muted">デビュー時から愛される定番曲</td>
               <td class="text-center">-</td>
             </tr>
             <tr>
               <td class="fw-bold">ナナイロプロローグ</td>
               <td>2023.03.14</td>
-              <td><span class="badge bg-secondary">配信</span></td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+              <td class="fw-bold">未完の青春</td>
+              <td>2023.03.14</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+              <td class="fw-bold">TUNE MY WAY</td>
+              <td>2023.04.08</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+              <td class="fw-bold">CATCH YOU</td>
+              <td>2023.05.20</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+            </tr>
+              <td class="fw-bold">きゅきゅきゅキュート</td>
+              <td>2023.06.27</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+            </tr>
+              <td class="fw-bold">WAO!アオハル!</td>
+              <td>2023.09.28</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+            </tr>
+              <td class="fw-bold">CATCH YOU</td>
+              <td>2023.05.20</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+            </tr>
+              <td class="fw-bold">CATCH YOU</td>
+              <td>2023.05.20</td>
+              <td class="small text-muted">作詞・作曲: 早川博隆</td>
+              <td class="text-center">-</td>
+            </tr>
+            </tr>
+              <td class="fw-bold">CATCH YOU</td>
+              <td>2023.05.20</td>
               <td class="small text-muted">作詞・作曲: 早川博隆</td>
               <td class="text-center">-</td>
             </tr>
             <tr>
               <td class="fw-bold">必殺あざとポーズ</td>
               <td>2023.11.17</td>
-              <td><span class="badge bg-secondary">配信 Single</span></td>
               <td class="small text-muted">あざとかわいいポーズ満載の人気曲</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
             <tr>
               <td class="fw-bold">倍倍FIGHT!</td>
               <td>2024.03.16</td>
-              <td><span class="badge bg-danger">1st Album 表題</span></td>
               <td class="small text-muted">作詞・作曲: 玉屋2060%<br>ライブで爆上がりするキラーチューン！</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
             <tr>
               <td class="fw-bold">推し♡好き♡しんどい</td>
               <td>2025.04.23</td>
-              <td><span class="badge bg-warning text-dark">2nd Single</span></td>
               <td class="small text-muted">作詞・作曲: ヒャダイン<br>オタク心を全力で歌った共感ソング</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
             <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold">スペシャル感謝祭</td>
+              <td>2026.06.05</td>
+              <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
+              <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
+            </tr>
+
+            <tr>
               <td class="fw-bold">HAPPY BOUNCE BIRTHDAY</td>
               <td>2026.04.22</td>
-              <td><span class="badge bg-warning text-dark">3rd Single</span></td>
               <td class="small text-muted">作詞・作曲: 玉屋2060%<br>みんなで祝えるハッピーなバースデーソング！</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
             <tr>
               <td class="fw-bold">スペシャル感謝祭</td>
               <td>2026.06.05</td>
-              <td><span class="badge bg-success">最新 配信Single</span></td>
               <td class="small text-muted">ファンへの感謝を込めた最新シングル</td>
               <td class="text-center"><a href="mv.html" class="btn btn-outline-danger btn-sm rounded-pill">MV</a></td>
             </tr>
@@ -131,8 +263,7 @@
     </div>
   </main>
 
-
-  <!-- 共通フッター -->
+  <!-- ==================== 4. 共通フッター ==================== -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>
   </footer>
