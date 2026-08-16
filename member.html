@@ -6,6 +6,7 @@
   <title>CANDY TUNE Fan Site member</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     .hero-section {
       background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
@@ -48,20 +49,22 @@
         <ul class="nav nav-pills flex-column flex-md-row justify-content-center text-center gap-1">
           <li class="nav-item"><a href="index.html" class="nav-link text-dark">トップ</a></li>
           <li class="nav-item"><a href="member.html" class="nav-link active">メンバー</a></li>
-          <li class="nav-item"><a href="mv.html" class="nav-link text-dark">MusicVideo</a></li>
+          <li class="nav-item"><a href="mv.html" class="nav-link text-dark">Music Video</a></li>
           <li class="nav-item"><a href="live.html" class="nav-link text-dark">Live映像</a></li>
+          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="houkago.html" class="nav-link text-dark">放課後きゃんちゅー部</a></li>
+          <li class="nav-item"><a href="haratv.html" class="nav-link text-dark">原宿テレビ</a></li>
+          <li class="nav-item"><a href="collaboration.html" class="nav-link text-dark">コラボレーション</a></li>
           <li class="nav-item"><a href="short.html" class="nav-link text-dark">ショート動画</a></li>
           <li class="nav-item"><a href="dance.html" class="nav-link text-dark">Dance Practice</a></li>
-          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="call.html" class="nav-link text-dark">Cheering Guide</a></li>
+          <li class="nav-item"><a href="discography.html" class="nav-link text-dark">ディスコグラフィ</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
   <!-- ==================== 3. ページごとのコンテンツエリア ==================== -->
@@ -78,10 +81,16 @@
               <span class="badge text-dark mb-2" style="background-color: #5bc2e7;">水色</span>
               <h5 class="card-title fw-bold">福山 梨乃</h5>
               <p class="card-text text-muted">りのまる</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -92,8 +101,38 @@
             <!-- 折りたたみ動画エリア -->
             <div class="collapse mt-2" id="videoRino">
               <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="りのまる注目動画" allowfullscreen></iframe>
+                <iframe
+                  width="1059"
+                  height="595"
+                  src="https://www.youtube.com/embed/Nf_WTDhxzCk"
+                  title="【福山梨乃】CANDY TUNE DOCUMENTARY #5"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>  
+              <div class="text-center">
+                <h6 class="fw-bold mb-1">DOCUMENTARY</h6>
               </div>
+
+
+              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
+                <iframe
+                  width="1059"
+                  height="595"
+                  src="https://www.youtube.com/embed/l9oXGomtlM8"
+                  title="【ダイジェスト】福山梨乃 生誕祭2025 at Spotify O-EAST"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="text-center">
+                <h6 class="fw-bold mb-1">生誕祭2025</h6>
+              </div>
+
             </div>
           </div>
         </div>
@@ -107,10 +146,16 @@
               <span class="badge text-white mb-2" style="background-color: #0055b8;">青色</span>
               <h5 class="card-title fw-bold">桐原 美月</h5>
               <p class="card-text text-muted">きりちゃん</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -121,7 +166,16 @@
             <!-- 折りたたみ動画エリア -->
             <div class="collapse mt-2" id="videoKiri">
               <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="りのまる注目動画" allowfullscreen></iframe>
+                <iframe
+                  width="1059"
+                  height="595"
+                  src="https://www.youtube.com/embed/REpu6KGdU0w"
+                  title="【桐原美月】CANDY TUNE DOCUMENTARY #1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
               </div>
             </div>
           </div>
@@ -133,13 +187,19 @@
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="なったん"> -->
             <div class="card-body">
-              <span class="badge text-dark mb-2" style="background-color: #ff9933;">オレンジ</span>
+              <span class="badge text-dark mb-2" style="background-color: #ff9933;">オレンジ色</span>
               <h5 class="card-title fw-bold">南 なつ</h5>
               <p class="card-text text-muted">なったん</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -165,10 +225,16 @@
               <span class="badge text-dark mb-2" style="background-color: #72d6b6;">ミントグリーン</span>
               <h5 class="card-title fw-bold">小川 奈々子</h5>
               <p class="card-text text-muted">なちこ</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -194,10 +260,16 @@
               <span class="badge text-white mb-2" style="background-color: #e6002d;">赤色</span>
               <h5 class="card-title fw-bold">立花 琴未</h5>
               <p class="card-text text-muted">こっちゃん</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -223,10 +295,16 @@
               <span class="badge text-white mb-2" style="background-color: #9b51e0;">紫色</span>
               <h5 class="card-title fw-bold">宮野 静</h5>
               <p class="card-text text-muted">しーちゃん</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -249,13 +327,19 @@
           <div class="card h-100 border-0 shadow-sm text-center">
             <!-- 写真入れる場合: <img src="..." class="card-img-top" alt="びびちゃん"> -->
             <div class="card-body">
-              <span class="badge text-white mb-2" style="background-color: #ff66a3;">ピンク</span>
+              <span class="badge text-white mb-2" style="background-color: #ff66a3;">ピンク色</span>
               <h5 class="card-title fw-bold">村川 緋杏</h5>
               <p class="card-text text-muted">びびちゃん</p>
-              <div class="d-flex justify-content-center gap-1">
-                <a href="#" target="_blank" class="btn btn-outline-danger btn-sm flex-fill px-0">Instagram</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">X</a>
-                <a href="#" target="_blank" class="btn btn-outline-dark btn-sm flex-fill px-0">TikTok</a>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.instagram.com/rinomaru_/" target="_blank" class="btn btn-outline-danger btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rino_ct0608" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rinomaru_" target="_blank" class="btn btn-outline-dark btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
               </div>
 
             <!-- 注目動画の展開ボタン -->
@@ -266,8 +350,22 @@
             <!-- 折りたたみ動画エリア -->
             <div class="collapse mt-2" id="videoBibi">
               <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-2">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_BIBI" title="びびちゃん注目動画" allowfullscreen></iframe>
+                <iframe
+                  width="1059"
+                  height="595"
+                  src="https://www.youtube.com/embed/HQrnFVKwh-o"
+                  title="【ダイジェスト】村川緋杏生誕祭2025 at Spotify O-EAST"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>  
+              <div class="text-center">
+                <h6 class="fw-bold mb-1">生誕祭2025</h6>
               </div>
+
+              
             </div>
           </div>
         </div>
@@ -279,6 +377,9 @@
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>
   </footer>
+
+  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -6,6 +6,7 @@
   <title>CANDY TUNE Fan Hub - MusicVideo</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     .hero-section {
       background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
@@ -15,6 +16,21 @@
     .hero-section {
       background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
       padding: 40px 20px;
+    }
+    .section-title {
+      position: relative;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background: #ff758c;
+      border-radius: 2px;
     }
   </style>
 </head>
@@ -46,32 +62,38 @@
         <ul class="nav nav-pills flex-column flex-md-row justify-content-center text-center gap-1">
           <li class="nav-item"><a href="index.html" class="nav-link text-dark">トップ</a></li>
           <li class="nav-item"><a href="member.html" class="nav-link text-dark">メンバー</a></li>
-          <li class="nav-item"><a href="mv.html" class="nav-link active">MusicVideo</a></li>
+          <li class="nav-item"><a href="mv.html" class="nav-link active">Music Video</a></li>
           <li class="nav-item"><a href="live.html" class="nav-link text-dark">Live映像</a></li>
+          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="houkago.html" class="nav-link text-dark">放課後きゃんちゅー部</a></li>
+          <li class="nav-item"><a href="haratv.html" class="nav-link text-dark">原宿テレビ</a></li>
+          <li class="nav-item"><a href="collaboration.html" class="nav-link text-dark">コラボレーション</a></li>
           <li class="nav-item"><a href="short.html" class="nav-link text-dark">ショート動画</a></li>
           <li class="nav-item"><a href="dance.html" class="nav-link text-dark">Dance Practice</a></li>
-          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="call.html" class="nav-link text-dark">Cheering Guide</a></li>
+          <li class="nav-item"><a href="discography.html" class="nav-link text-dark">ディスコグラフィ</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 
   <!-- ==================== 2. ヒーローセクション ==================== -->
-  <div class="hero-section text-center mb-4">
-    <h2 class="h3 fw-bold mb-2">Music Videos</h2>
-    <p class="m-0 text-secondary small">CANDY TUNEの公式MVまとめページです！</p>
+  <div class="hero-section text-center mb-5">
+    <h2 class="h3 fw-bold mb-2">Music Videos & Behind The Scenes</h2>
+    <p class="m-0 text-secondary small">CANDY TUNEの公式MVと舞台裏メイキング映像のまとめページです！</p>
   </div>
 
 
   <!-- ==================== 3. コンテンツ ==================== -->
 <main class="container mb-5">
   <section class="pt-3 border-top">
+    <div class="section-title">
+      <h3 class="h4 fw-bold text-dark mb-1">
+        <i class="bi bi-play-circle-fill text-danger me-2"></i>Music Videos
+      </h3>
+      <p class="text-muted small m-0">公式ミュージックビデオ一覧</p>
+    </div>
     <div class="row g-3">
     
       <!-- スペシャル感謝祭 -->
@@ -396,13 +418,112 @@
 
     </div>
   </section>
-</main>
 
+
+<!-- ------------------ 3-2. MV舞台裏・メイキングセクション ------------------ -->
+    <section class="pt-4 border-top">
+      <div class="section-title">
+        <h3 class="h4 fw-bold text-dark mb-1">
+          <i class="bi bi-camera-reels-fill text-warning me-2"></i>メイキング映像
+        </h3>
+        <p class="text-muted small m-0">MV撮影の裏側・メイキング映像</p>
+      </div>
+
+      <!-- 舞台裏動画一覧 -->
+      <div class="row g-4">
+
+
+        <!-- 倍倍FIGHT! -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/fcHlUcag6dY"
+              title="【裏側密着】CANDY TUNE「倍倍FIGHT!」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">倍倍FIGHT!</h6>
+          </div>
+        </div>
+
+        <!-- エトセトLOVE YOU -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/Lcu2zsItyVs"
+              title="【裏側密着】CANDY TUNE「エトセトLOVE YOU」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">エトセトLOVE YOU</h6>
+          </div>
+        </div>
+
+        <!-- 必殺あざとポーズ -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/C7p925CrRrk"
+              title="【裏側密着】CANDY TUNE「必殺あざとポーズ」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">必殺あざとポーズ</h6>
+          </div>
+        </div>
+
+        <!-- hanamaru -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/B7GJjZD2KuA"
+              title="【裏側密着】CANDY TUNE「hanamaru」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">hanamaru</h6>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+  </main>
 
   <!-- ==================== 4. 共通フッター ==================== -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>
   </footer>
+
+  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

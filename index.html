@@ -6,6 +6,7 @@
   <title>CANDY TUNE Fan Site</title>
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     .hero-section {
       background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
@@ -28,7 +29,7 @@
       <h1 class="display-4 fw-bold">CANDY TUNE</h1>
       <p class="lead">Kawaii Lab.発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
       <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
-      <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
     </div>
   </header>
 
@@ -48,34 +49,89 @@
         <ul class="nav nav-pills flex-column flex-md-row justify-content-center text-center gap-1">
           <li class="nav-item"><a href="index.html" class="nav-link active">トップ</a></li>
           <li class="nav-item"><a href="member.html" class="nav-link text-dark">メンバー</a></li>
-          <li class="nav-item"><a href="mv.html" class="nav-link text-dark">MusicVideo</a></li>
+          <li class="nav-item"><a href="mv.html" class="nav-link text-dark">Music Video</a></li>
           <li class="nav-item"><a href="live.html" class="nav-link text-dark">Live映像</a></li>
+          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="houkago.html" class="nav-link text-dark">放課後きゃんちゅー部</a></li>
+          <li class="nav-item"><a href="haratv.html" class="nav-link text-dark">原宿テレビ</a></li>
+          <li class="nav-item"><a href="collaboration.html" class="nav-link text-dark">コラボレーション</a></li>
           <li class="nav-item"><a href="short.html" class="nav-link text-dark">ショート動画</a></li>
           <li class="nav-item"><a href="dance.html" class="nav-link text-dark">Dance Practice</a></li>
-          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
           <li class="nav-item"><a href="call.html" class="nav-link text-dark">Cheering Guide</a></li>
+          <li class="nav-item"><a href="discography.html" class="nav-link text-dark">ディスコグラフィ</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
   <!-- ==================== 3. ページごとのコンテンツエリア ==================== -->
-  <main class="container py-4">
-    <section class="mb-5">
-      <h2 class="h4 border-bottom pb-2 mb-3">イチオシ動画</h2>
-      <div class="ratio ratio-16x9 shadow-sm rounded">
-        <iframe src="https://www.youtube.com/embed/LNivza5zh0Q" title="【MV】CANDY TUNE『スペシャル感謝祭』" allowfullscreen></iframe>
-      </div>
-    </section>
+<main class="container py-4">
+    <!-- サイト最終更新日バッジ -->
+    <div class="d-flex justify-content-end mb-3">
+      <span class="badge bg-secondary p-2 shadow-sm">最終更新日: 2026.08.14</span>
+    </div>
 
-    <section>
-      <h2 class="h4 border-bottom pb-2 mb-3">最新更新</h2>
-      <p>各カテゴリーの動画は上のメニューから選んでね！</p>
+    <!-- 最新リリース ピックアップ -->
+    <div class="alert alert-info border-0 shadow-sm rounded-4 p-4 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <span class="badge bg-danger mb-2">NEW RELEASE</span>
+          <h3 class="fw-bold mb-1">配信シングル「スペシャル感謝祭」配信中！</h3>
+          <p class="mb-0 text-muted">きゃんちゅーの最新曲が各サブスク・配信サイトにて好評配信中！</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="discography.html" class="btn btn-outline-dark rounded-pill">楽曲一覧で見る ➔</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- お知らせ・更新履歴 -->
+    <section class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+      <h3 class="fw-bold mb-3 border-bottom pb-2">📢 お知らせ & サイト更新履歴</h3>
+      <div class="list-group list-group-flush">
+        <div class="list-group-item px-0 py-3">
+          <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+            <span class="badge bg-primary">サイト更新</span>
+            <small class="text-muted">2026/08/14</small>
+          </div>
+          <p class="mb-1 fw-bold">「楽曲一覧（Discography）」ページを新規公開しました！</p>
+          <small class="text-muted">リリース日やタイアップ情報、作詞作曲者情報をまとめて確認できます。</small>
+        </div>
+
+        <div class="list-group-item px-0 py-3">
+          <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+            <span class="badge bg-success">動画追加</span>
+            <small class="text-muted">2026/08/10</small>
+          </div>
+          <p class="mb-1 fw-bold">メンバー紹介ページの注目動画（ソロ動画）を更新しました！</p>
+          <small class="text-muted">各メンバーの魅力をより知れるショート動画・ライブ映像を追加しています。</small>
+        </div>
+
+        <div class="list-group-item px-0 py-3">
+          <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+            <span class="badge bg-secondary">公開</span>
+            <small class="text-muted">2026/08/01</small>
+          </div>
+          <p class="mb-1 fw-bold">CANDY TUNE 非公式ファンサイトをオープン！</p>
+          <small class="text-muted">きゃんちゅーの魅力を布教・紹介するためのファンサイトです。</small>
+        </div>
+      </div>
+
+
+  <div class="card border-0 shadow-sm rounded-4 p-3 mb-4">
+  <h4 class="fw-bold mb-3">📢 公式X（旧Twitter）</h4>
+  
+  <!-- ここからX埋め込み -->
+  <a class="twitter-timeline" data-height="500" href="https://twitter.com/CANDY_TUNE_?ref_src=twsrc%5Etfw">
+    Tweets by CANDY_TUNE_
+  </a> 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- ここまで -->
+  
+</div>
+
+
+
     </section>
   </main>
 
@@ -84,6 +140,9 @@
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>
   </footer>
+
+  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
