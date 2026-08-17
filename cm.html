@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANDY TUNE Fan Hub - MusicVideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
+      padding: 60px 20px;
+    }
+    /* スマホで横並びメニューがはみ出た時に横スクロールできるようにする設定 */
+    .hero-section {
+      background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
+      padding: 40px 20px;
+    }
+    .section-title {
+      position: relative;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background: #ff758c;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ==================== 1. 共通ヘッダー ==================== -->
+<header class="hero-section text-center mb-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">CANDY TUNE</h1>
+      <p class="lead">カワラボ発！きゃんちゅーの魅力を詰め込んだファンサイト</p>
+      <!-- ボタンの親要素に flex と gap を追加 -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="https://candytune.asobisystem.com/" target="_blank" class="btn btn-primary rounded-pill px-4">公式WEBサイトへ</a>
+        <a href="https://www.youtube.com/@candy_tune/" target="_blank" class="btn btn-primary rounded-pill px-4">公式YouTubeチャンネルへ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 1. 【共通】固定ヘッダー & 横並びメニュー ==================== -->
+  <nav class="bg-light border-bottom sticky-top shadow-sm py-2">
+    <div class="container">
+      <!-- スマホ用のアコーディオン開閉ボタン -->
+      <div class="d-md-none text-center">
+        <button class="btn btn-outline-dark btn-sm w-100 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#categoryMenu">
+          メニューを選ぶ ▾
+        </button>
+      </div>
+
+      <!-- PCでは常に横並び、スマホではボタンを押したら開く -->
+      <div class="collapse d-md-block mt-2 mt-md-0" id="categoryMenu">
+        <ul class="nav nav-pills flex-column flex-md-row justify-content-center text-center gap-1">
+          <li class="nav-item"><a href="index.html" class="nav-link active">トップ</a></li>
+          <li class="nav-item"><a href="member.html" class="nav-link text-dark">メンバー</a></li>
+          <li class="nav-item"><a href="mv.html" class="nav-link text-dark">Music Video</a></li>
+          <li class="nav-item"><a href="live.html" class="nav-link text-dark">Live映像</a></li>
+          <li class="nav-item"><a href="digest.html" class="nav-link text-dark">DIGEST MOVIE</a></li>
+          <li class="nav-item"><a href="houkago.html" class="nav-link text-dark">放課後きゃんちゅー部</a></li>
+          <li class="nav-item"><a href="haratv.html" class="nav-link text-dark">原宿てれび。</a></li>
+          <li class="nav-item"><a href="cm.html" class="nav-link text-dark">出演CM</a></li>
+          <li class="nav-item"><a href="collaboration.html" class="nav-link text-dark">企業コラボ</a></li>
+          <li class="nav-item"><a href="short.html" class="nav-link text-dark">ショート動画</a></li>
+          <li class="nav-item"><a href="dance.html" class="nav-link text-dark">Dance Practice</a></li>
+          <li class="nav-item"><a href="call.html" class="nav-link text-dark">Cheering Guide</a></li>
+          <li class="nav-item"><a href="discography.html" class="nav-link text-dark">ディスコグラフィ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== 2. ヒーローセクション ==================== -->
+  <div class="hero-section text-center mb-5">
+    <h2 class="h3 fw-bold mb-2">出演CM</h2>
+    <p class="m-0 text-secondary small">CANDY TUNEが出演したCMと舞台裏メイキング映像のまとめページです！</p>
+  </div>
+
+  <!-- ==================== 3. コンテンツ ==================== -->
+<main class="container mb-5">
+  <section class="pt-3 border-top">
+    <div class="section-title">
+      <h3 class="h4 fw-bold text-dark mb-1">
+        <i class=" text-danger me-2"></i>HottoMotto
+      </h3>
+      <p class="text-muted small m-0">　CM & メイキング映像</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-12 col-sm-6 col-lg-3 mb-2">
+        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+          <iframe
+            width="1059"
+            height="595"
+            src="https://www.youtube.com/embed/PsurEyda-_Q"
+            title="【HottoMotto×CANDY TUNE】TVCM「アジアフェア！焼肉ビビンバ」篇"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="text-center">
+          <h6 class="fw-bold mb-1">【HottoMotto×CANDY TUNE】TVCM「アジアフェア！焼肉ビビンバ」篇</h6>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 mb-2">
+        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+          <iframe
+            width="1059" 
+            height="595"
+            src="https://www.youtube.com/embed/KxynzXpzcyc"
+            title="【HottoMotto×CANDY TUNE】TVCM「アジアフェア！麻辣湯＆ガパオ」篇"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="text-center">
+          <h6 class="fw-bold mb-1">【HottoMotto×CANDY TUNE】TVCM「アジアフェア！麻辣湯＆ガパオ」篇</h6>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 mb-2">
+        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+          <iframe
+            width="1059"
+            height="595"
+            src="https://www.youtube.com/embed/mL5Rcaq9TVk"
+            title="【HottoMotto×CANDY TUNE】CMメイキング「アジアフェア！焼肉ビビンバ」篇"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="text-center">
+          <h6 class="fw-bold mb-1">【HottoMotto×CANDY TUNE】CMメイキング「アジアフェア！焼肉ビビンバ」篇</h6>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 mb-2">
+        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+          <iframe
+            width="1059"
+            height="595"
+            src="https://www.youtube.com/embed/D15eg-Km2CE"
+            title="【HottoMotto×CANDY TUNE】CMメイキング「アジアフェア！麻辣湯＆ガパオ」篇"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="text-center">
+          <h6 class="fw-bold mb-1">【HottoMotto×CANDY TUNE】CMメイキング「アジアフェア！麻辣湯＆ガパオ」篇</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ------------------ 3-2. MV舞台裏・メイキングセクション ------------------ -->
+    <section class="pt-4 border-top">
+      <div class="section-title">
+        <h3 class="h4 fw-bold text-dark mb-1">
+          <i class="text-warning me-2"></i>第一三共ヘルスケア
+        </h3>
+        <p class="text-muted small m-0">　CM & メイキング映像 & インタビュー</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/WQnLwxLNaTg"
+              title="【CANDY TUNE7人出演】エージーアレルカット「スカッと！」篇"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">【CANDY TUNE7人出演】エージーアレルカット「スカッと！」篇</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/i0YfHufkRU8"
+              title="エージーアレルカット　メイキングムービー"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">CANDY TUNE、撮影中に本気でウトウト！？パジャマに大盛りあがり「みんなかわいい！」　「エージーアレルカットⓇ」シリーズ新TVCM「スカッと！」篇</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/QJeow18z3Sc"
+              title="CANDY TUNE、撮影中に本気でウトウト！？パジャマに大盛りあがり「みんなかわいい！」　「エージーアレルカットⓇ」シリーズ新TVCM「スカッと！」篇"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">CANDY TUNE、撮影中に本気でウトウト！？パジャマに大盛りあがり「みんなかわいい！」　「エージーアレルカットⓇ」シリーズ新TVCM「スカッと！」篇</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/NcKLAI1TdpE"
+              title="エージーアレルカット　スペシャルインタビュー"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">エージーアレルカット　スペシャルインタビュー</h6>
+          </div>
+        </div>
+
+        <!-- 推し♡好き♡しんどい-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="992"
+              height="483"
+              src="https://www.youtube.com/embed/q_KMecRiDi4"
+              title="【裏側密着】CANDY TUNE「推し♡好き♡しんどい」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">推し♡好き♡しんどい</h6>
+          </div>
+        </div>
+
+        <!-- 必殺あざとポーズ -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/C7p925CrRrk"
+              title="【裏側密着】CANDY TUNE「必殺あざとポーズ」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">必殺あざとポーズ</h6>
+          </div>
+        </div>
+
+        <!-- 備えあれば無問題 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="992"
+              height="483"
+              src="https://www.youtube.com/embed/RdTrmuLx8m0"
+              title="【裏側密着】CANDY TUNE「備えあれば無問題」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              ="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">備えあれば無問題</h6>
+          </div>
+        </div>
+
+        <!-- hanamaru -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-2">
+            <iframe
+              width="1059"
+              height="595"
+              src="https://www.youtube.com/embed/B7GJjZD2KuA"
+              title="【裏側密着】CANDY TUNE「hanamaru」メイキング映像【MV】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="text-center">
+            <h6 class="fw-bold mb-1">hanamaru</h6>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 4. 共通フッター ==================== -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="m-0 small">&copy; CANDY TUNE Fan Site</p>
+  </footer>
+
+  <!-- BootstrapのJavaScript（アコーディオン開閉に必要） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
